@@ -23,7 +23,6 @@ body {
 
 .quote-container {
     width: auto;
-    margin-right: 175px;
     max-width: 1000px;
     padding: 20px 30px;
     border-radius: 10px;
@@ -57,7 +56,7 @@ body {
     justify-content: space-between;
 }
 
-button {
+.twitter-button {
     cursor: pointer;
     font-size: 1.2rem;
     height: 2.5rem;
@@ -68,6 +67,20 @@ button {
     padding: 0.5rem 1.8rem;
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
+
+#simpson-quote {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: #333;
+    background: #ffff00;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+
 
 button:hover {
     filter: brightness(110%)
@@ -88,6 +101,7 @@ button:active {
 
 button#simpson-quote:hover {
     color: #ffff00;
+    background-color: #333;
 }
 
 img#simpson-character {
@@ -116,7 +130,6 @@ img#simpson-character {
         transform: rotate(360deg);
     }
 }
-
 
 /* Media query: tablet or smaller */
 

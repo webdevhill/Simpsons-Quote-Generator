@@ -62,6 +62,7 @@ async function getQuote(quoteType) {
 
         const response = await fetch(url);
         const data = await response.json();
+        console.log(data);
 
         quote = data[0].quote;
         author = data[0].character;
@@ -69,7 +70,6 @@ async function getQuote(quoteType) {
 
         authorText.innerText = author;
 
-        
         quoteText.innerText = quote;
 
         removeLoadingSpinner();
