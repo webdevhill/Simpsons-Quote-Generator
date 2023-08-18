@@ -5,42 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simpsons Quotes</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="overlay">
-
-    <!--Quote-->
+<body>
+    <div id="loader" class="loader"></div>    
     <div class="quote-container" id="quote-container">
         <div class="quote-text">
             <i class="fa fa-quote-left">
-                <span id="quote">
-                </span>
+                <span id="quote"></span>
             </i>
         </div>
-
-    <!--Author-->
     <div class="quote-author">
         <img id="simpson-character" />
         <span id="author"></span>
     </div>
-
-    <!--Buttons-->
     <div class="button-container">
         <button class="twitter-button" id="twitter" title="Tweet this!">
             <i class="fab fa-twitter"></i>
         </button>
         <button id="simpson-quote">"The Simpsons ..." </button>
     </div>
-
-    <!--Loaders -->
-    <div id="loader" class="loader"></div>
-
-    <!-- Script -->
     <script src="script.js"></script>
-    
 </body>
 
 </html>
